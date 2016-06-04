@@ -124,9 +124,9 @@ const persona operator+(const persona& hombre,const persona& mujer){
 		}else{
 			piel="oscura";
 		}
-		return persona(nombre,genero,cabello,gencabello,ojos,genojos,piel,genpiel,fertil);
+		return new persona(nombre,genero,cabello,gencabello,ojos,genojos,piel,genpiel,fertil);
 	}else{
-		return persona();
+		return new persona();
 	}
 }
 const persona operator*(const persona& hombre,const persona& mujer){
@@ -225,8 +225,8 @@ const persona operator*(const persona& hombre,const persona& mujer){
 		}else{
 			piel="oscura";
 		}
-		return persona(nombre,genero,cabello,gencabello,ojos,genojos,piel,genpiel,fertil);
+		return new persona(nombre,genero,cabello,gencabello,ojos,genojos,piel,genpiel,fertil);
 	}else{
-		return persona();
+		return new persona();
 	}
 }
