@@ -9,9 +9,9 @@ class persona{
 	string ojos;
   	string piel;
   	bool fertil;
+  	persona(const Person&);
  	public:
 	persona(string, string, string, string, string, bool);
-	persona(const Person&);
 	virtual ~persona();
 	string toString()const;	
 };
