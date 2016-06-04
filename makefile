@@ -1,8 +1,8 @@
-persona:	main.o persona.o
-	g++ main.o persona.o -o persona
-
-main.o:	main.cpp persona.h
-	g++ -c main.cpp
+persona:	persona.o main.o
+	g++ persona.o main.o -o persona
 
 persona.o:	persona.cpp persona.h
 	g++ -c persona.cpp
+
+main.o:	main.cpp persona.h persona.cpp
+	g++ -c main.cpp
