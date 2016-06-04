@@ -24,7 +24,9 @@ string persona::toString()const{
 	ss<<"Nombre:"<<nombre<<"-"<<genero<<"-Cabello:"<<cabello<<"-Ojos:"<<ojos<<"-Piel:"<<piel<<"-Fertil:"<<fertil;
 	return ss.str();
 }
-
+persona::string getGenero(){
+	return genero;
+}
 const persona operator+(const persona& hombre,const persona& mujer){
 	srand(time(NULL));
 	string nombre,genero,cabello,ojos,piel;

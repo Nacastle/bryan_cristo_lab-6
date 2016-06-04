@@ -15,6 +15,7 @@ public:
   	bool fertil;
 	persona(string, string, string, char*, string,char*,string,char*,bool);
 	persona();
+	string getGenero();
 	string toString()const;
 };
 
