@@ -9,9 +9,13 @@ class persona{
 		string ojos;
   	string piel;
   	bool fertil;
+  	persona(const Person&);
  	public:
 	persona(string, string, string, string, string, bool);
+<<<<<<< HEAD
 	persona(const persona&);
+=======
+>>>>>>> fd867a6694aa9b9075b52bbf4fee839b2451d168
 	virtual ~persona();
 	string toString()const;
 };
