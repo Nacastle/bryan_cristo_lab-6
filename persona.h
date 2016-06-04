@@ -3,19 +3,18 @@
 using std::string;
 
 class persona{
-	string nombre;
- 	string genero;
+		string nombre;
+ 		string genero;
   	string cabello;
-	string ojos;
+		string ojos;
   	string piel;
   	bool fertil;
  	public:
 	persona(string, string, string, string, string, bool);
-	persona(const Person&);
+	persona(const persona&);
 	virtual ~persona();
-	string toString()const;	
+	string toString()const;
 };
 
-friend const persona operator+(const persona&,const persona&);
-friend const persona operator*(const persona&,const persona&);
-
+const persona operator+(const persona&,const persona&);
+const persona operator*(const persona&,const persona&);
