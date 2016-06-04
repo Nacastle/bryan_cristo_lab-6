@@ -28,5 +28,7 @@ friend const persona operator+(const persona& hombre,const persona& mujer){
 
 }
 friend const persona operator*(const persona& hombre,const persona& mujer){
-
+	if(){
+		
+	}
 }
