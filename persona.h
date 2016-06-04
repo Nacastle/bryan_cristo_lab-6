@@ -3,20 +3,18 @@
 using std::string;
 
 class persona{
-		string nombre;
- 		string genero;
+public:
+	string nombre;
+ 	string genero;
   	string cabello;
-		string ojos;
+  	char* gencabello=char[2];
+	string ojos;
+	char* genojos=char[2];
   	string piel;
+  	char* genpiel=char[2];
   	bool fertil;
-  	persona(const Person&);
- 	public:
-	persona(string, string, string, string, string, bool);
-<<<<<<< HEAD
-	persona(const persona&);
-=======
->>>>>>> fd867a6694aa9b9075b52bbf4fee839b2451d168
-	virtual ~persona();
+	persona(string, string, string, char*, string,char*,string,char*,bool);
+	persona();
 	string toString()const;
 };
 
