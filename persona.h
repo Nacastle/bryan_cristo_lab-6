@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <cstring>
 using std::string;
 
 class persona{
@@ -7,11 +8,11 @@ public:
 	string nombre;
  	string genero;
   	string cabello;
-  	char* gencabello=char[2];
+  	char* gencabello;
 	string ojos;
-	char* genojos=char[2];
+	char* genojos;
   	string piel;
-  	char* genpiel=char[2];
+  	char* genpiel;
   	bool fertil;
 	persona(string, string, string, char*, string,char*,string,char*,bool);
 	persona();
@@ -19,5 +20,5 @@ public:
 	string toString()const;
 };
 
-const persona operator+(const persona&,const persona&);
-const persona operator*(const persona&,const persona&);
+persona* operator+(const persona&,const persona&);
+persona* operator*(const persona&,const persona&);
